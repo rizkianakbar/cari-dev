@@ -29,24 +29,24 @@ export default function Navbar() {
   React.useEffect(() => setMounted(true), []);
 
   return (
-    <div className='flex flex-col justify-center px-8 fixed w-full mt-[-5px] bg-gray-50/80  dark:bg-gray-900/80 backdrop-blur z-[999]'>
-      <nav className='flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-8 text-gray-900 dark:text-gray-100'>
+    <div className='flex flex-col justify-center px-8 fixed w-full mt-[-5px] backdrop-blur-sm z-[999]'>
+      <nav className='flex items-center justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-6 pb-6 sm:pb-6 text-gray-900 dark:text-gray-100'>
         <a href='#skip' className='skip-nav'>
           Skip to content
         </a>
         <div className='ml-[-0.60rem]'>
           <Link href='/'>
-            <a className='md:inline-block mr-4 text-xl font-bold tracking-tight text-black dark:text-white p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-all'>
+            <a className='md:inline-block mr-4 text-xl font-bold tracking-tight text-black dark:text-white p-1 sm:px-3 sm:py-2 rounded-lg transition-all'>
               RizkianAkbar
             </a>
           </Link>
-          <NavItem href='/' text='Home' />
+          {/* <NavItem href='/' text='Home' /> */}
         </div>
         <div className='flex items-center justify-center'>
           <button
             aria-label='Toggle Dark Mode'
             type='button'
-            className='w-9 h-9 mr-10 md:mr-0 bg-gray-200 rounded-lg dark:bg-gray-600 hover:ring-2 ring-gray-300 transition-all'
+            className='w-9 h-9 bg-gray-200 rounded-lg dark:bg-second hover:ring-2 ring-gray-300 transition-all'
             onClick={() => {
               setTheme(resolvedTheme === 'dark' ? 'light' : 'dark');
             }}
