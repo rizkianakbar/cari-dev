@@ -37,7 +37,7 @@ a {
 }
 
 #__next {
-  @apply bg-gray-50 dark:bg-gray-900;
+  @apply bg-gray-50 dark:bg-main;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
