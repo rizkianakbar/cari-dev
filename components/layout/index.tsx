@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import Footer from '@/components/molecules/Footer';
-import MobileMenu from '@/components/molecules/MobileMenu';
 import Navbar from '@/components/molecules/Navbar';
 
 interface IProps {
@@ -28,7 +26,7 @@ export default function Layout(props: IProps) {
   };
 
   return (
-    <div className='bg-gray-50 dark:bg-gray-900'>
+    <div>
       <Head>
         <title>{meta.title}</title>
         <meta name='robots' content='follow, index' />
@@ -56,13 +54,11 @@ export default function Layout(props: IProps) {
         )}
       </Head>
       <Navbar />
-      <MobileMenu />
       <main
         id='skip'
-        className='flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900 overflow-y-auto mt-[130px]'
+        className='flex flex-col justify-center px-8 overflow-y-auto mt-[100px] gap-4'
       >
         {children}
-        <Footer />
       </main>
     </div>
   );
