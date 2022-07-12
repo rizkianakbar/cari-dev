@@ -8,8 +8,8 @@ module.exports = {
     extend: {
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)',
-        main: '#0E172A',
-        second: '#334154',
+        main: '#131C2F',
+        second: '#202B49',
         gray: {
           0: '#fff',
           100: '#fafafa',
