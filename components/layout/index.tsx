@@ -56,7 +56,7 @@ export default function Layout(props: IProps) {
       <Navbar />
       <main
         id='skip'
-        className='flex flex-col justify-center px-8 overflow-y-auto mt-[100px] gap-4'
+        className='flex flex-col justify-center px-4 md:px-8 overflow-y-auto mt-[100px] gap-4'
       >
         {children}
       </main>
