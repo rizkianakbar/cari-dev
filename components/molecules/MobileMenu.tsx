@@ -18,9 +18,7 @@ export default function MobileMenu() {
     }
   );
 
-  const {
-    globalState: { setNavIsActive },
-  } = useGlobalContext();
+  const { setNavIsActive } = useGlobalContext();
 
   function toggleMenu() {
     if (isMenuOpen) {
