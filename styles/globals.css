@@ -26,6 +26,7 @@
 html {
   min-width: 360px;
   scroll-behavior: smooth;
+  font-family: 'Space Mono', monospace;
 }
 
 input,
