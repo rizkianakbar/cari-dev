@@ -3,9 +3,7 @@ import * as React from 'react';
 import { useGlobalContext } from '@/context/GlobalContext';
 
 export default function useLoaded() {
-  const {
-    globalState: { preloaded },
-  } = useGlobalContext();
+  const { preloaded } = useGlobalContext();
 
   const [isLoaded, setIsLoaded] = React.useState<boolean>(false);
 
