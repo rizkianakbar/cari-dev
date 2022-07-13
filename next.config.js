@@ -5,7 +5,7 @@ module.exports = {
   swcMinify: true,
   reactStrictMode: true,
   images: {
-    domains: [],
+    domains: ['avatars.githubusercontent.com'],
   },
   experimental: {
     legacyBrowsers: false,
