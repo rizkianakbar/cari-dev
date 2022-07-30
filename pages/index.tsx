@@ -91,19 +91,19 @@ const Home: NextPage = () => {
               <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-6 gap-x-2 text-sm'>
                 <p data-fade='3'>
                   <GithubIcon className='inline' />
-                  {location ? location : 'No location'}
+                  {location ?? 'No Location'}
                 </p>
                 <p data-fade='4'>
                   <GithubIcon className='inline' />
-                  {company ? company : 'No company'}
+                  {company ?? 'No Company'}
                 </p>
                 <p data-fade='5'>
                   <GithubIcon className='inline' />
-                  {blog ? blog : 'No blog'}
+                  {blog ? blog : 'No Blog'}
                 </p>
                 <p data-fade='6'>
                   <TwitterIcon className='inline' />
-                  {twitter_username ? twitter_username : 'No twitter'}
+                  {twitter_username ?? 'No Twitter'}
                 </p>
               </div>
             </div>
