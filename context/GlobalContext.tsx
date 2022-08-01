@@ -62,7 +62,7 @@ export const GlobalProvider: React.FC<GlobalProviderProps> = ({ children }) => {
     }
   }
 
-  const fetchEditProfile = async (userName: string) => {
+  const fetchProfile = async (userName: string) => {
     setLoading(true);
     const url = `https://api.github.com/users/${userName}`;
 
@@ -100,7 +100,7 @@ export const GlobalProvider: React.FC<GlobalProviderProps> = ({ children }) => {
   };
 
   React.useEffect(() => {
-    if (userName) fetchEditProfile(userName);
+    if (userName) fetchProfile(userName);
   }, [userName]);
 
   React.useEffect(() => {
