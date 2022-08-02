@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
+import Footer from '@/components/molecules/Footer';
 import Navbar from '@/components/molecules/Navbar';
 
 interface IProps {
@@ -60,6 +61,7 @@ export default function Layout(props: IProps) {
       >
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
