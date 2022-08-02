@@ -3,11 +3,12 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import * as React from 'react';
 import { Toaster } from 'react-hot-toast';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { BiBuildingHouse, BiCurrentLocation } from 'react-icons/bi';
+import { CgWebsite } from 'react-icons/cg';
 
 import useLoaded from '@/hooks/useLoaded';
 
-import GithubIcon from '@/components/icons/GithubIcon';
-import TwitterIcon from '@/components/icons/TwitterIcon';
 import Layout from '@/components/layout';
 import Search from '@/components/molecules/Search';
 
@@ -90,19 +91,19 @@ const Home: NextPage = () => {
               </div>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-6 gap-x-2 text-sm'>
                 <p data-fade='3'>
-                  <GithubIcon className='inline' />
+                  <BiCurrentLocation className='inline h-5 w-5 -mt-1 mr-1' />
                   {location ?? 'No Location'}
                 </p>
                 <p data-fade='4'>
-                  <GithubIcon className='inline' />
+                  <BiBuildingHouse className='inline h-5 w-5 -mt-1 mr-1' />
                   {company ?? 'No Company'}
                 </p>
                 <p data-fade='5'>
-                  <GithubIcon className='inline' />
+                  <CgWebsite className='inline h-5 w-5 -mt-1 mr-1' />
                   {blog ? blog : 'No Blog'}
                 </p>
                 <p data-fade='6'>
-                  <TwitterIcon className='inline' />
+                  <AiOutlineTwitter className='inline h-5 w-5 -mt-1 mr-1' />@
                   {twitter_username ?? 'No Twitter'}
                 </p>
               </div>
